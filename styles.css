@@ -1,0 +1,97 @@
+
+/* Document Structure */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Text Formatting */
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Forms */
+input[type="text"], input[type="password"], button {
+    margin: 5px;
+}
+
+/* Interactive Elements */
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Meta Information */
+/* No specific styling for meta tags */
+
+/* Box Model */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 20px auto;
+}
+
+.styled-text {
+    color: blue;
+}
