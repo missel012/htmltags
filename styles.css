@@ -95,3 +95,63 @@ button {
 .styled-text {
     color: blue;
 }
+
+/* Media */
+/* Image */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    display: block;
+    margin: 10px auto;
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Video */
+video {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Canvas */
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Figure with Figcaption */
+figure {
+    margin: 10px auto;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+}
+
+/* Picture */
+picture {
+    display: block;
+    margin: 10px auto;
+}
+
+/* SVG */
+svg {
+    display: block;
+    margin: 10px auto;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+section h2 {
+    margin-top: 0;
+}

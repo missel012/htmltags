@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Media</title>
+</head>
+<body>
+    <h2>Media Examples</h2>
+    
+    <!-- Image -->
+    <img src="media/image1.jpg" alt="This is Mr. Fresh the cat!" usemap="#image-map">
+    <map name="image-map">
+        <area shape="rect" coords="0,0,200,200" href="somepage.html" alt="Some Page">
+        <area shape="circle" coords="250,250,50" href="anotherpage.html" alt="Another Page">
+    </map>
+    
+    <!-- Audio -->
+    <audio controls>
+        <source src="media/audio.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Video -->
+    <video controls width="400">
+        <source src="media/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Canvas -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <!-- Figure with Figcaption -->
+    <figure>
+        <img src="media/image2.jpg" alt="This is Gort the capybara!">
+        <figcaption>His name is Gort.</figcaption>
+    </figure>
+
+    <!-- Picture -->
+    <picture>
+        <source srcset="media/picture.webp" type="image/webp">
+        <img src="media/image2.jpg" alt="Might not be Gort">
+    </picture>
+
+    <!-- SVG -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+</body>
+</html>
