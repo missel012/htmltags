@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- Document Structure -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,68 +9,78 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Document Structure -->
     <header>
-        <h1>Header 1</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Section Title</h2>
-        <p>Section content</p>
-    </section>
-    <article>
-        <h3>Article Title</h3>
-        <p>Article content</p>
-    </article>
-    <footer>
-        <h4>Footer Content</h4>
-    </footer>
+        <h1>Text Formatting, Lists, Links, Tables</h1>
+    </header>  
 
     <!-- Text Formatting -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <p><b>This is bold text</b> and <i>this is italic text</i>.</p>
-    <p><u>This is underlined text</u>.</p>
-    <p><strong>This is strong text</strong> and <em>this is emphasized text</em>.</p>
-    <p>This is <sub>subscript</sub> and this is <sup>superscript</sup> text.</p>
+    <h1>1: The quick brown fox jumps over the lazy dog.</h1>
+    <h2>2: The quick brown fox jumps over the lazy dog.</h2>
+    <h3>3: The quick brown fox jumps over the lazy dog.</h3>
+    <h4>4: The quick brown fox jumps over the lazy dog.</h4>
+    <h5>5: The quick brown fox jumps over the lazy dog.</h5>
+    <h6>6: The quick brown fox jumps over the lazy dog.</h6>
+
+    <p><b>This is bold text</b> and <i>this is italic text</i>.
+    <u>This is underlined text</u>.
+    <strong>This is strong text</strong> and <em>this is emphasized text</em>.
+    This is <sub>subscript</sub> and this is <sup>superscript</sup> text.</p>
 
     <!-- Lists -->
-    <h6>Lists</h6>
+    <h4>Unordered Lists</h4>
     <ul>
-        <li>Unordered List Item 1</li>
-        <li>Unordered List Item 2</li>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Grapes</li>
     </ul>
+    <h4>Ordered Lists</h4>
     <ol>
-        <li>Ordered List Item 1</li>
-        <li>Ordered List Item 2</li>
+        <li>Introduction to HTML</li>
+        <li>Understanding CSS Basics</li>
+        <li>Exploring JavaScript Fundamentals</li>
+        <li>Mastering Responsive Web Design</li>
     </ol>
 
     <!-- Links -->
-    <a href="https://www.example.com">Visit Example</a>
+    <h4>Links</h4>
+
+    <a href="https://missel012.github.io/MyPortfolio/" target="_blank">Marisol's Portfolio</a>
     <a href="media.html">Media HTML</a>
 
     <!-- Tables -->
+
+    <h4>Table</h4>
+
     <table>
         <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
         </tr>
         <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>40</td>
+            <td>UK</td>
         </tr>
     </table>
+    
 
     <!-- Forms -->
+    <header>
+        <h1>Forms</h1>
+    </header>  
+
     <form action="/submit" method="post" onsubmit="alert('Successfully Submitted')">
         <input type="text" name="username" placeholder="Enter your username">
         <input type="password" name="password" placeholder="Enter your password">
@@ -83,51 +95,73 @@
 
     <!-- Semantic Elements -->
     <header>
-        <h1>Semantic Elements</h1>
+        <h1>Semantic & Interactive Elements, Meta Information, Box Model</h1>
     </header>
-    <footer>
-        <p>Footer content</p>
-    </footer>
+
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <article>
-        <h2>Article Title</h2>
-        <p>Article content</p>
-    </article>
-    <section>
-        <h3>Section Title</h3>
-        <p>Section content</p>
-    </section>
 
-    <!-- Interactive Elements -->
-    <h4>Interactive Elements</h4>
-    <button onclick="alert('Button clicked')">Click Me</button>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox">Checkbox</label>
-    <input type="radio" id="radio" name="radio">
-    <label for="radio">Radio</label>
-    <form action="/submit" method="post" onsubmit="alert('Successfully Submitted')">
-        <input type="text" name="username" placeholder="Enter your username">
-        <input type="submit" value="Submit">
-    </form>
-    <select>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-    </select>
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>In HTML, the <code>&lt;article&gt;</code> element is a semantic tag used to define a self-contained piece of content that could be distributed and reused independently. It's typically used for content such as blog posts, forum posts, news articles, or any other independent content item within a webpage.</p>
+        </article>
 
-    <!-- Meta Information -->
-    <h5>Meta Information</h5>
-    <meta charset="UTF-8">
-    <meta name="description" content="Description of the webpage">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Author Name">
+        <section>
+            <h2>Section Title</h2>
+            <p>In HTML, the <code>&lt;section&gt;</code> element is a semantic tag used to define sections within a document or webpage. It is typically employed to group together related content. The purpose of <code>&lt;section&gt;</code> is to improve the structure and semantics of the HTML document, making it more accessible to users and aiding search engines in understanding the content.</p>
+            
+            <!-- Interactive Elements -->
+            <h4>Interactive Elements</h4>
+            <button onclick="alert('Button clicked')">Click Me</button>
 
-    <!-- Box Model -->
-    <div class="box"></div>
-    <span class="styled-text">Styled text</span>
+            <details>
+            <summary>Checkbox and Radiobutton</summary>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Checkbox</label>
+            <input type="radio" id="radio" name="radio">
+            <label for="radio">Radio</label>
+            </details>
+
+            <dialog open>
+            <p>This is a dialog box</p>
+            </dialog>
+
+            <form action="/submit" method="post" onsubmit="alert('Successfully Submitted')">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="submit" value="Submit">
+            </form>
+
+            <select>
+            <option value="option1">Cat</option>
+            <option value="option2">Dog</option>
+            </select>
+        </section>
+
+        <footer>
+            <p>A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+
+            <!-- Meta Information -->
+            <h5>Meta Information</h5>
+            <meta charset="UTF-8">
+            <meta name="description" content="HTML Tags in a webpage">
+            <meta name="keywords" content="HTML, CSS">
+            <meta name="author" content="Marisol Daaatahan">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+
+            <!-- Box Model -->
+            <div class="box"></div>
+            <span class="styled-text">Styled text</span>
+        </footer>
+    </main>
+
+    <aside>
+        <h2>Aside Content</h2>
+        <p>This is additional content that is related to the main content but not part of the main flow of the document.</p>
+    </aside>
 </body>
 </html>

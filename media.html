@@ -5,45 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Media</title>
+    <style>
+      
+        .styled-image {
+            max-width: 100%; 
+            display: block;
+            margin: 10px auto; 
+        }
+    </style>
 </head>
 <body>
-    <h2>Media Examples</h2>
-    
-    <!-- Image -->
-    <img src="media/image1.jpg" alt="This is Mr. Fresh the cat!" usemap="#image-map">
-    <map name="image-map">
-        <area shape="rect" coords="0,0,200,200" href="somepage.html" alt="Some Page">
-        <area shape="circle" coords="250,250,50" href="anotherpage.html" alt="Another Page">
-    </map>
-    
-    <!-- Audio -->
-    <audio controls>
-        <source src="media/audio.mp3" type="audio/mpeg">
-    </audio>
-    
-    <!-- Video -->
-    <video controls width="400">
-        <source src="media/video.mp4" type="video/mp4">
-    </video>
 
-    <!-- Canvas -->
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
 
-    <!-- Figure with Figcaption -->
-    <figure>
-        <img src="media/image2.jpg" alt="This is Gort the capybara!">
-        <figcaption>His name is Gort.</figcaption>
-    </figure>
+    <section id="video-section">
+        <h2>Video: OIIA</h2>
+        <video controls width="400">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+    </section>
 
-    <!-- Picture -->
-    <picture>
-        <source srcset="media/picture.webp" type="image/webp">
-        <img src="media/image2.jpg" alt="Might not be Gort">
-    </picture>
+    <section id="audio-section">
+        <h2>Audio: Violin</h2>
+        <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section id="image-section">
+        <h2>Image: Mr. Fresh</h2>
+        <img src="media/image1.jpg" alt="This is Mr. Fresh the cat!" usemap="#image-map" class="styled-image">
+        <map name="image-map">
+            <area shape="rect" coords="0,0,200,200" href="somepage.html" alt="Some Page">
+            <area shape="circle" coords="250,250,50" href="anotherpage.html" alt="Another Page">
+        </map>
+    </section>
 
-    <!-- SVG -->
-    <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
+    <section id="figure-section">
+        <h2>Figure: Gort</h2>
+        <figure>
+            <img src="media/image2.jpg" alt="This is Gort the capybara!" class="styled-image">
+            <figcaption>His name is Gort.</figcaption>
+        </figure>
+    </section>
+
+    <section id="picture-section">
+        <h2>Picture: Carnotaurus</h2>
+        <picture>
+            <source srcset="media/picture.webp" type="image/webp">
+            <img src="media/image2.jpg" alt="Might not be Gort" class="styled-image">
+        </picture>
+    </section>
+
+    <section id="canvas-section">
+        <h2>Canvas Example</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    </section>
+
+    <section id="svg-section">
+        <h2>SVG Example</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+    </section>
+
 </body>
 </html>

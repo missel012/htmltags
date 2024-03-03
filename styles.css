@@ -1,9 +1,7 @@
-
-/* Document Structure */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    color: #fafafa;
+    background-color: #666;
+    text-align: center;
 }
 
 nav ul {
@@ -16,7 +14,6 @@ nav li {
     margin-right: 10px;
 }
 
-/* Text Formatting */
 b {
     font-weight: bold;
 }
@@ -29,12 +26,10 @@ u {
     text-decoration: underline;
 }
 
-/* Lists */
 ul, ol {
     margin-left: 20px;
 }
 
-/* Links */
 a {
     color: blue;
 }
@@ -43,18 +38,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Images */
-img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Tables */
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
 }
 
 th, td {
@@ -63,67 +49,105 @@ th, td {
     text-align: left;
 }
 
-/* Forms */
-input[type="text"], input[type="password"], button {
-    margin: 5px;
+form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Interactive Elements */
-button {
-    background-color: #008CBA;
-    color: white;
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button {
     padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Meta Information */
-/* No specific styling for meta tags */
 
-/* Box Model */
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    margin: 20px auto;
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
 }
+
+label {
+    color: #333;
+    margin-right: 10px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: calc(100% - 100px); 
+}
+
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 30%;
+    text-align: left;
+}
+
 
 .styled-text {
     color: blue;
 }
 
-/* Media */
-/* Image */
-img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
+
+canvas, picture, svg {
     display: block;
     margin: 10px auto;
 }
 
-/* Audio */
-audio {
-    display: block;
-    margin: 10px auto;
-}
-
-/* Video */
 video {
-    display: block;
     margin: 10px auto;
+    text-align: center;
 }
 
-/* Canvas */
-canvas {
-    border: 1px solid #000;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Figure with Figcaption */
 figure {
     margin: 10px auto;
     text-align: center;
@@ -134,18 +158,6 @@ figcaption {
     color: #666;
 }
 
-/* Picture */
-picture {
-    display: block;
-    margin: 10px auto;
-}
-
-/* SVG */
-svg {
-    display: block;
-    margin: 10px auto;
-}
-
 section {
     margin: 20px;
     padding: 20px;
@@ -154,4 +166,12 @@ section {
 
 section h2 {
     margin-top: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100px; 
+    background-color: rgb(0, 229, 255);
+    margin: 0; 
+    padding: 0; 
 }
